@@ -1,0 +1,26 @@
+# Vivado build and cache directories
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+
+# Log and Journal files
+*.jou
+*.log
+*.str
+*.pb
+*.vdi
+*.vds
+usage_statistics_webtalk.*
+
+# Bitstreams and checkpoints (optional, but recommended to ignore to save space)
+*.bit
+*.dcp
+
+# Xilinx hidden folders
+.Xil/
+
+# Keep the project file itself
+!P10_Victim_Cache.xpr

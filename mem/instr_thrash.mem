@@ -1,0 +1,39 @@
+// # Thrashing Test Workload
+// # Loops 10 times, accessing 5 addresses mapped to index 0: 0, 64, 128, 192, 256.
+// # 
+// # 0x00: ADDI x1, x0, 10    // # loop counter (10)
+// # 0x04: ADDI x2, x0, 0     // # i = 0
+// # 
+// # loop:
+// # 0x08: LW x3, 0(x0)       // # Addr 0
+// # 0x0C: LW x4, 64(x0)      // # Addr 64
+// # 0x10: LW x5, 128(x0)     // # Addr 128
+// # 0x14: LW x6, 192(x0)     // # Addr 192
+// # 0x18: LW x7, 256(x0)     // # Addr 256
+// # 
+// # 0x1C: SW x3, 0(x0)       // # Writeback Addr 0
+// # 0x20: SW x4, 64(x0)      // # Writeback Addr 64
+// # 0x24: SW x5, 128(x0)     // # Writeback Addr 128
+// # 0x28: SW x6, 192(x0)     // # Writeback Addr 192
+// # 0x2C: SW x7, 256(x0)     // # Writeback Addr 256
+// # 
+// # 0x30: ADDI x2, x2, 1     // # i++
+// # 0x34: BNE x2, x1, loop   // # if (i != 10) goto loop (-44)
+// # 
+// # 0x38: BEQ x0, x0, 0      // # End loop
+
+00A00093
+00000113
+00002183
+04002203
+08002283
+0C002303
+10002383
+00302023
+04402023
+08502023
+0C602023
+10702023
+00110113
+FE1111E3
+00000063

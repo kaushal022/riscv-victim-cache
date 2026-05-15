@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_p10_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_p10" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="19,264.334 ns"></ZoomStartTime>
+      <ZoomEndTime time="19,988.335 ns"></ZoomEndTime>
+      <Cursor1Time time="19,760.834 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="505"></NameColumnWidth>
+      <ValueColumnWidth column_width="346"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/tb_p10/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/alu_out" type="array">
+      <obj_property name="ElementShortName">alu_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/pc_out" type="array">
+      <obj_property name="ElementShortName">pc_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/cache_stall" type="logic">
+      <obj_property name="ElementShortName">cache_stall</obj_property>
+      <obj_property name="ObjectShortName">cache_stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/hit_l1_count" type="array">
+      <obj_property name="ElementShortName">hit_l1_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hit_l1_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/hit_vc_count" type="array">
+      <obj_property name="ElementShortName">hit_vc_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hit_vc_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/miss_total_count" type="array">
+      <obj_property name="ElementShortName">miss_total_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">miss_total_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/mem_access_count" type="array">
+      <obj_property name="ElementShortName">mem_access_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_access_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/cycles" type="array">
+      <obj_property name="ElementShortName">cycles[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycles[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/instr_count" type="array">
+      <obj_property name="ElementShortName">instr_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_p10/DUT/CACHE/miss_handled" type="logic">
+      <obj_property name="ElementShortName">miss_handled</obj_property>
+      <obj_property name="ObjectShortName">miss_handled</obj_property>
+   </wvobject>
+</wave_config>
