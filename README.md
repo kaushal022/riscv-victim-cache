@@ -9,6 +9,7 @@ This repository contains the RTL design and verification environment for a **4-e
 ## 🧠 Architecture Overview
 
 ![System Architecture Diagram](architecture.svg)
+
 *Above: High-level architectural block diagram showing the integration of the Victim Cache between the L1 Cache and Main Memory.*
 
 The victim cache sits directly between the L1 cache and main memory to safely catch and hold evicted blocks, reducing the severe penalty of conflict misses. 
@@ -21,6 +22,7 @@ The victim cache sits directly between the L1 cache and main memory to safely ca
 The testbenches evaluate performance under different memory access patterns, specifically targeting instruction thrashing scenarios where the victim cache prevents severe performance degradation.
 
 ![Instruction Thrashing Waveform](SIMULATION_waveform1_instr_thrash.png)
+
 *Above: Simulation waveform demonstrating cache hits, misses, and victim cache data swapping during an instruction thrashing sequence.*
 
 ## ⚙️ Simulation Setup & Configuration
